@@ -17,3 +17,20 @@ print(np.diag(arr))
 
 c=np.diag(arr)
 print(np.diag(c))
+
+ar=np.array([[5,6]])
+con=np.concatenate((arr,ar.T),axis=1)
+print(con)
+
+att=np.array([[2,3],[4,5]])
+at=np.array([[6,7]])
+cont=np.concatenate((att,at.T),axis=1)
+cont=np.concatenate((att,at),axis=None)
+cont=np.concatenate((att,at),axis=0)
+print(cont)
+
+a=np.array([[8,9,10,11]])
+b=np.array([[12,13,14,15]])
+c=np.hstack((a,b))
+print(c)
+
